@@ -129,7 +129,7 @@ const NavBar: React.FC = () => {
               )}
             </CustomNavLink>
           ))}
-          <LanguageSwitch />
+          {/* <LanguageSwitch /> */}
         </nav>
       )}
       {isMobileMenuActive && (

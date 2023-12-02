@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Button from "./Button";
 import axios from "axios";
 import { Highlight, themes } from "prism-react-renderer";
-import { contactData, toastMessages } from "../assets/lib/data.tsx";
+import { contactData, toastMessages, personalData } from "../assets/lib/data.tsx";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
 import { ToastContainer, toast } from "react-toastify";
@@ -34,28 +34,29 @@ const Contact: React.FC = () => {
 
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
     setError(null);
-    console.log(error);
 
     e.preventDefault();
-    const data = new FormData(e.currentTarget);
+    // @ts-expect-error: window is needed
+    window.location = `mailto:${personalData.email}?subject=${name}: ${subject}&body=${message}`;
 
-    try {
-      const response = await axios.post(apiBaseUrl, data);
-      console.log(response);
-      if (language === "DE") {
-        toast.success(toastMessages.successEmailSent.de);
-      } else {
-        toast.success(toastMessages.successEmailSent.en);
-      }
-    } catch (error) {
-      console.log(error);
-      if (language === "DE") {
-        toast.error(toastMessages.failedEmailSent.de);
-      } else {
-        toast.error(toastMessages.failedEmailSent.en);
-      }
-      setError("An Error occured, try again later");
-    }
+    // try {
+      
+    //   // const response = await axios.post(apiBaseUrl, data);
+    //   // console.log(response);
+    //   if (language === "DE") {
+    //     toast.success(toastMessages.successEmailSent.de);
+    //   } else {
+    //     toast.success(toastMessages.successEmailSent.en);
+    //   }
+    // } catch (error) {
+    //   console.log(error);
+    //   if (language === "DE") {
+    //     toast.error(toastMessages.failedEmailSent.de);
+    //   } else {
+    //     toast.error(toastMessages.failedEmailSent.en);
+    //   }
+    //   // setError("An Error occured, try again later");
+    // }
   };
 
   const handleInputFocus = (fieldName: string) => {
@@ -122,54 +123,24 @@ const Contact: React.FC = () => {
   const codeSnippet = `
 import  { useState } from "react";
 
-// 🌈 Spreading Stardust: 
-// Crafting Cosmic Email 🌌
+// Communicating Across Galaxies 🌠
 
 const [sender, setSender] = "${name}${
     lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
   }🚀";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
 const [subject, setSubject] = \n"${subject}${
     lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
   }✨";
 const [message, setMessage] = 
-\`Hello, intrepid traveler! 👋\n
-Across the cosmos, a message for you:\n
+\`Greetings, Earthling! 👽 \n
+In a galaxy far, far away, a message for you:\n
 "${wordWrap(message, 40, " ")}${
     lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
   }"\n
-Wishing you stardust dreams,\n
+  May the force be with you,\n
 ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
 \``;
 
-  //   const codeSnippet2 = `
-  // // 🚀 Initiating Quantum Email Transmission 🪐
-  // const launchEmail = async () => {
-  //   try {
-  //     const response = await fetch('https://alpaycelik.dev/send',{
-  //     method: 'POST',
-  //     headers: {'Content-Type': 'application/json'},
-  //     body: JSON.stringify({
-  //      sender,
-  //      recipient,
-  //      subject,
-  //      message
-  //     })
-  //    });
-
-  //    if (response.ok) {
-  //    console.log('🌌 Transmission successful!');
-  //    } else {
-  //    console.error('🌠 Cosmic glitch encountered...');
-  //    }
-  //   } catch (error) {
-  //   console.error('🌪 Quantum disturbance detected:', error);
-  //   }
-  // };
-  // // 🚀 Ready for Liftoff? 🛸
-  // launchEmail();`;
 
   return (
     <React.Fragment>
@@ -286,7 +257,7 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   : "bg-[--icewhite] dark-shadow"
               }`}
             />
-            <div className="privacy-checkbox flex gap-16">
+            {/* <div className="privacy-checkbox flex gap-16">
               <label
                 className="block w-2 h-2 cursor-pointer"
                 htmlFor="checkbox-label"
@@ -304,12 +275,12 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                   ? `${contactData.privacyOptIn.checkbox.de}`
                   : `${contactData.privacyOptIn.checkbox.en}`}
               </p>
-            </div>
-            <p>
+            </div> */}
+            {/* <p>
               {language === "DE"
                 ? `${contactData.privacyOptIn.description.de}`
                 : `${contactData.privacyOptIn.description.en}`}
-            </p>
+            </p> */}
             <Button
               value={
                 language === "DE"

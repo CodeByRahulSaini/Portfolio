@@ -6,6 +6,7 @@ import cssicon from "../../assets/icons/cssicon.svg";
 import javascripticon from "../../assets/icons/javascripticon.svg";
 import typescripticon from "../../assets/icons/typescripticon.svg";
 import reacticon from "../../assets/icons/reacticon.svg";
+import reactnativeicon from "../../assets/icons/reactnativeicon.svg";
 import nextjsicon from "../../assets/icons/nextjsicon.svg";
 import nodejsicon from "../../assets/icons/nodejsicon.svg";
 import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
@@ -20,18 +21,27 @@ import spotifyicon from "../../assets/icons/spotifyicon.svg";
 import netlifyicon from "../../assets/icons/netlifyicon.svg";
 import rendericon from "../../assets/icons/rendericon.svg";
 import jwticon from "../../assets/icons/jwticon.svg";
-import wordpressicon from "../../assets/icons/wordpressicon.svg";
-import shopifyicon from "../../assets/icons/shopifyicon.svg";
-import webflowicon from "../../assets/icons/webflowicon.svg";
+import yogaicon from "../../assets/icons/yogaicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
 import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
-import profilepicture from "../img/me2.webp";
+import profilepicture from "../img/me3.jpeg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
+import flowicon from "../../assets/icons/flowicon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
+import graphqlicon from "../../assets/icons/graphqlicon.svg";
+import githubicon from "../../assets/icons/githubicon.svg";
+import awsicon from "../../assets/icons/awsicon.svg";
+import dockericon from "../../assets/icons/dockericon.svg";
+import jesticon from "../../assets/icons/jesticon.svg";
+import cypressicon from "../../assets/icons/cypressicon.svg";
+import mysqlicon from "../../assets/icons/mysqlicon.svg";
+import reduxicon from "../../assets/icons/reduxicon.svg";
+import websocketicon from "../../assets/icons/websocketicon.svg";
+
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import Imprint from "../../components/Imprint";
@@ -39,19 +49,19 @@ import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
-    de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    de: "",
+    en: "Hi, I'm Rahul",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "Fullstack Engineer ",
   description: {
-    de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    de: "",
+    en: "With 6+ years with JavaScript, MERN, and React Native |  8+ years as Software Engineer | Skilled in working independently, collaborating in teams, and leading projects | Advocate for using technology for good.",
   },
   buttons: [
     {
       name: "Contact",
       label: {
-        de: "Kontaktiere mich",
+        de: "",
         en: "Contact me",
       },
       icon: FiMail,
@@ -60,7 +70,7 @@ export const headerIntroData = {
     {
       name: "Projects",
       label: {
-        de: "Meine Projekte",
+        de: "",
         en: "My Projects",
       },
       icon: FiGithub,
@@ -72,11 +82,10 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
-    description:
-      "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
+    title: "Gobble App",
+    description:"",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+      "Contributed to the development of Gobble, a social group ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding. Worked on major gobble party feature with real-time operations using Socket.io, boosting engagement by 15%. Integrated Firebase analytics into Gobble App to track user activities, uncover user journey insights, and analyze user behavior patterns; leveraged data-driven insights to optimize user experience and increase retention.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -89,8 +98,8 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: tastyMockup,
-    deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
+    // deploymenturl: "",
+    // githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -101,11 +110,10 @@ export const projectsData = [
     },
   },
   {
-    title: "Silentmoon",
-    description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
+    title: "Truesafe",
+    description:"",
     description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
+      "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules through interactive slides, videos, quizzes, games, simulated phishing emails, and comprehensive reporting. Additionally, crafted an interactive educational game within the platform to facilitate hands-on learning of crucial cybersecurity.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -121,9 +129,8 @@ export const projectsData = [
       { name: "Render", icon: rendericon },
     ],
     image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
+    deploymenturl: "",
+    githuburl:"",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -134,11 +141,11 @@ export const projectsData = [
     },
   },
   {
-    title: "Furniture Organizer",
+    title: "Labelcaster",
     description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
+      "",
     description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
+      "An automated platform for contract management, distribution, reporting, and payouts between labels and artists. Architected a multi-user single entity system allowing users to assume various roles (artist, label, admins, managers); integrated DocuSign for dynamic contracts, sendgrid for communication, and third-party APIs to fetch song stats from Spotify, Twitch, and other platforms.",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -154,8 +161,232 @@ export const projectsData = [
       { name: "Trello", icon: trelloicon },
     ],
     image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "VidSpy",
+    description:
+      "",
+    description_EN:
+      "Created an advanced YouTube analytics platform enabling creators to monitor their video performance and access their competition's data. The platform offers daily updates through an intuitive dashboard, helping users make informed decisions.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Grail",
+    description:
+      "",
+    description_EN:
+      "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "MyStylist",
+    description:
+      "",
+    description_EN:
+      "Collaborated with a team of 5 members to create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Pwayz",
+    description:
+      "",
+    description_EN:
+      "Developedanappthatfacilitatesrentingparking spaces, including those in front of houses, personal garages, and similar locations. The app features a map display for users to find nearby available spaces and offers booking functionality.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "TopperQ",
+    description:
+      "",
+    description_EN:
+      "Empowered students to engage in subject-specific quizzes crafted by teachers, complete with a leaderboard for tracking progress and generating detailed reports.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "AngelLift",
+    description:
+      "",
+    description_EN:
+      "Professional drivers for hire to drive impaired individuals and their cars to their home.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
+  {
+    title: "Kali Mirchi",
+    description:
+      "",
+    description_EN:
+      "A restaurant management website that empowers restaurant owners to create menus, submenus, and seamlessly handle order payments, streamlining restaurant operations.",
+    technologies: [
+      { name: "Html", icon: htmlicon },
+      { name: "CSS", icon: cssicon },
+      { name: "JavaScript", icon: javascripticon },
+      { name: "React", icon: reacticon },
+      { name: "JWT & Bcrypt", icon: jwticon },
+      { name: "Axios", icon: axiosicon },
+      { name: "MongoDB", icon: mongodbicon },
+      { name: "Express", icon: expressiconwhite },
+      { name: "Node.js", icon: nodejsicon },
+      { name: "Figma", icon: figmaicon },
+      { name: "Render", icon: rendericon },
+      { name: "Trello", icon: trelloicon },
+    ],
+    image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
     githubicon: FiGithub,
     deploymenticon: FiLink,
     colors: {
@@ -169,27 +400,15 @@ export const projectsData = [
 
 export const liveTickerData = {
   content: {
-    de: "Weitere Projekte auf Github",
+    de: "",
     en: "More Projects on Github",
   },
 } as const;
 
-export const skillsDataWeb = [
+export const skillsDataFrontEnd = [
   {
-    skillsTitle: "WebDevelopment",
+    skillsTitle: "FrontEnd",
     skills: [
-      {
-        title: "HTML",
-        hash: "#html",
-        icon: htmlicon,
-        color: "#F1662A",
-      },
-      {
-        title: "CSS",
-        hash: "#CSS",
-        icon: cssicon,
-        color: "#1572B6",
-      },
       {
         title: "JavaScript",
         hash: "#JavaScript",
@@ -209,16 +428,28 @@ export const skillsDataWeb = [
         color: "#61DAFB",
       },
       {
+        title: "React Native",
+        hash: "#ReactNative",
+        icon: reactnativeicon,
+        color: "#61DAFB",
+      },
+      {
+        title: "GraphQL",
+        hash: "#GraphQL",
+        icon: graphqlicon,
+        color: "#e535ab",
+      },
+      {
         title: "Next.js",
         hash: "#Next.js",
         icon: [nextjsicon, nextjsiconwhite],
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "Node.js",
-        hash: "#Node.js",
-        icon: nodejsicon,
-        color: "#339933",
+        title: "Redux",
+        hash: "#Redux",
+        icon: reduxicon,
+        color: "#764ABC",
       },
       {
         title: "Tailwind",
@@ -227,16 +458,36 @@ export const skillsDataWeb = [
         color: "#38B2AC",
       },
       {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
+        title: "HTML",
+        hash: "#html",
+        icon: htmlicon,
+        color: "#F1662A",
       },
       {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
+        title: "SASS/SCSS",
+        hash: "#SASS/SCSS",
+        icon: sassscssicon,
+        color: "#CC6699",
+      },
+      {
+        title: "CSS",
+        hash: "#CSS",
+        icon: cssicon,
+        color: "#1572B6",
+      },
+    ],
+  },
+] as const;
+
+export const skillsDataBackEnd = [
+  {
+    skillsTitle: "BackEnd",
+    skills: [
+      {
+        title: "Node.js",
+        hash: "#Node.js",
+        icon: nodejsicon,
+        color: "#339933",
       },
       {
         title: "Express",
@@ -245,88 +496,117 @@ export const skillsDataWeb = [
         color: ["#000000", "#FFFFFF"],
       },
       {
-        title: "SASS/SCSS",
-        hash: "#SASS/SCSS",
-        icon: sassscssicon,
-        color: "#CC6699",
+        title: "GraphQL",
+        hash: "#GraphQL",
+        icon: graphqlicon,
+        color: "#e535ab",
       },
+      {
+        title: "MongoDB",
+        hash: "#MongoDB",
+        icon: mongodbicon,
+        color: "#449C45",
+      },
+      {
+        title: "MySQL",
+        hash: "#MySQL",
+        icon: mysqlicon,
+        color: "#00546B",
+      }, 
+      {
+        title: "WebSocket",
+        hash: "#WebSocket",
+        icon: websocketicon,
+        color: "#fff",
+      }, 
+
+
     ],
   },
 ] as const;
 
-export const skillsDataDesign = [
+export const skillsDataAlso = [
   {
-    skillsTitle: "Design",
-    skills: [
-      { title: "Figma", hash: "#Figma", icon: figmaicon, color: "#F24E1E" },
-      {
-        title: "Adobe XD",
-        hash: "#Adobe XD",
-        icon: adobexdicon,
-        color: "#FF61F6",
-      },
-      { title: "Canva", hash: "#Canva", icon: canvaicon, color: "#00C4CC" },
-    ],
-  },
-] as const;
-
-export const skillsDataCMS = [
-  {
-    skillsTitle: "CMS",
+    skillsTitle: "",
     skills: [
       {
-        title: "WordPress",
-        hash: "#WordPress",
-        icon: wordpressicon,
-        color: "#21759B",
+        title: "Jest",
+        hash: "#Jest",
+        icon: jesticon,
+        color: "#99425b",
+      },
+      // {
+      //   title: "React Testing Library",
+      //   hash: "#WordPress",
+      //   icon: wordpressicon,
+      //   color: "#21759B",
+      // },
+      {
+        title: "Cypress",
+        hash: "#Cypress",
+        icon: cypressicon,
+        color: "#69D3A7",
       },
       {
-        title: "Shopify",
-        hash: "#Shopify",
-        icon: shopifyicon,
-        color: "#7AB55C",
+        title: "CI/CD",
+        hash: "#CI/CD",
+        icon: githubicon,
+        color: "#5c6bc0",
       },
       {
-        title: "Webflow",
-        hash: "#Webflow",
-        icon: webflowicon,
-        color: "#4353FF",
+        title: "AWS",
+        hash: "#AWS",
+        icon: awsicon,
+        color: "#252f3e",
+      },
+      {
+        title: "Docker",
+        hash: "#Docker",
+        icon: dockericon,
+        color: "#BDD9D7",
       },
     ],
   },
 ] as const;
 
 export const navLinks = [
-  { de: "Home", en: "Home", hash: "#home", icon: GoHome },
-  { de: "Skills", en: "Skills", hash: "#skills", icon: GoStack },
-  { de: "Projekte", en: "Projects", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "About me", hash: "#about-me", icon: GoPerson },
-  { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
+  { de: "", en: "Home", hash: "#home", icon: GoHome },
+  { de: "", en: "Skills", hash: "#skills", icon: GoStack },
+  { de: "", en: "Projects", hash: "#projects", icon: GoProject },
+  { de: "", en: "About me", hash: "#about-me", icon: GoPerson },
+  { de: "", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
 export const FooterLinks = [
-  { de: "Impressum", en: "Imprint", hash: "#imprint", data: <Imprint /> },
-  { de: "Datenschutz", en: "Privacy", hash: "#privacy", data: <Privacy /> },
+  // { de: "", en: "Imprint", hash: "#imprint", data: <Imprint /> },
+  // { de: "", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
+export const personalData = {
+  email: 'rahul_saini_@outlook.com',
+  linkedin: 'https://www.linkedin.com/in/rahul-saini-profile/',
+  github: 'https://github.com/CodeByRahulSaini',
+} as const;
+
+
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: `mailto:${personalData.email}`,
+  text: personalData.email,
 } as const;
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
+    link: personalData.linkedin,
     icon: FiLinkedin,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
+    link: personalData.github,
     icon: FiGithub,
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: `mailto:${personalData.email}`,
     icon: FiMail,
     altimgname: "mail",
   },
@@ -334,59 +614,60 @@ export const sideBarLeftSocials = [
 
 export const quotesData = [
   {
-    de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    de: '',
+    en: `"We are all now connected by the Internet, like neurons in a giant brain."`,
+    author: "Stephen Hawking",
   },
   {
-    de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    de: '',
+    en: `"If something is important enough, even if the odds are against you, you should still do it."`,
+    author: 'Elon Musk'
   },
 ] as const;
 
 export const aboutMeData = {
-  title: "Über mich",
+  title: "",
   title_EN: "About me",
-  description: "Ein paar Codeschnippsel über mich",
+  description: "",
   description_EN: "A few code snippets about me",
   paragraphs_DE: [
     {
-      title: "Die Schaltkreise meines Herzens",
+      title: "",
       description:
-        "Wenn ich nicht in der digitalen Welt unterwegs bin, durchstreife ich die faszinierende Welt der Technik und Hardware. Schaltkreise und Lötstellen sind für mich wie Puzzleteile eines aufregenden Abenteuers.",
-      icon: hardwareicon,
+        "",
+      icon: flowicon,
     },
     {
-      title: "Auf der Überholspur des Lebens",
+      title: "",
       description:
-        "Neben dem Coden befinde ich mich gerne auf der Überholspur – im wahrsten Sinne des Wortes. Autos sind meine Leidenschaft, und ich genieße es, mit PS-starken Maschinen auf unbekannten Straßen unterwegs zu sein.",
+        "",
       icon: caricon,
     },
     {
-      title: "Entdeckungsfreude als Lebensmotto",
+      title: "",
       description:
-        "Meine Reise als Webentwickler ist nur ein Teil meines Lebenswegs. Ich lebe nach dem Motto, dass das Abenteuer erst beginnt, wenn man das Bekannte hinter sich lässt. Das Entdecken neuer Orte ist meine Form der kreativen Inspiration.",
+        "",
       icon: travelicon,
     },
   ],
   paragraphs_EN: [
     {
-      title: "The Circuits of My Heart",
+      title: "Philosopher at Heart",
       description:
-        "When I'm not navigating the digital world, I explore the fascinating realm of technology and hardware. Circuits and solder joints are like puzzle pieces to me in an exciting adventure.",
+        "Beyond the realms of everyday life, I delve into the profound mysteries of existence. Meditation and mindfulness are my sanctuaries; yoga, my journey to inner peace. Reading about philosophy and spirituality helps me connect with the deeper essence of life, finding tranquility in the pursuit of understanding.",
+      icon: yogaicon,
+    },
+    {
+      title: "In the Zone of Flow",
+      description:
+        "Whether I'm coding, cooking, or out for a run, I have the unique ability to lose myself completely in the task at hand. Time ceases to exist as I enter the state of flow, effortlessly moving from one activity to the next. This ability isn't just about focus; it's about finding joy and fulfillment in every moment, no matter the activity.",
+      icon: flowicon,
+    },
+    {
+      title: "The Local Gadget Guru",
+      description:
+        "Since the age of 13-14, I've been the neighborhood's go-to tech expert. Laptops, mobiles, dish TVs, CD players – you name it, I've fixed it. My curiosity knows no bounds, and I revel in the opportunity to explore and understand every gadget's features and possibilities. It's not just about fixing things; it's about unraveling the mysteries they hold.",
       icon: hardwareicon,
-    },
-    {
-      title: "On the Fast Lane of Life",
-      description:
-        "Besides coding, I like to be on the fast lane - in the truest sense of the word. Cars are my passion, and I enjoy being on unknown roads with powerful machines.",
-      icon: caricon,
-    },
-    {
-      title: "The Joy of Discovery as a Life Motto",
-      description:
-        "My journey as a web developer is only a part of my life path. I live by the motto that the adventure only begins when you leave the familiar behind. Discovering new places and cultures is my form of creative inspiration.",
-      icon: travelicon,
     },
   ],
 };
@@ -414,19 +695,19 @@ export const contactData = {
       },
       pattern: "{2}",
     },
-    {
-      name: "email",
-      placeholder: {
-        de: "Deine E-Mail Adresse",
-        en: "Your E-Mail",
-      },
-      type: "email",
-      validation: {
-        de: "Bitte gebe deine Email ein",
-        en: "Please fill in your email",
-      },
-      pattern: "[@]{4}",
-    },
+    // {
+    //   name: "email",
+    //   placeholder: {
+    //     de: "Deine E-Mail Adresse",
+    //     en: "Your E-Mail",
+    //   },
+    //   type: "email",
+    //   validation: {
+    //     de: "Bitte gebe deine Email ein",
+    //     en: "Please fill in your email",
+    //   },
+    //   pattern: "[@]{4}",
+    // },
     {
       name: "subject",
       placeholder: {
