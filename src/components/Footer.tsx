@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { sideBarLeftSocials, FooterLinks } from "../assets/lib/data";
 import { useLanguage } from "../context/language-context";
@@ -7,7 +7,7 @@ import { useTheme } from "../context/theme-context";
 
 import Popup from "reactjs-popup";
 import { VscChromeClose } from "react-icons/vsc";
-const LazyServiceStatus = lazy(() => import("../components/ServiceStatus"));
+// const LazyServiceStatus = lazy(() => import("../components/ServiceStatus"));
 
 interface SocialLink {
   link: string;
@@ -89,7 +89,7 @@ const Footer: React.FC = () => {
       </div>
       <div>
         {/* <Suspense fallback={<div>Loading...</div>}>
-          <LazyServiceStatus />
+          // <LazyServiceStatus />
         </Suspense> */}
       </div>
     </footer>

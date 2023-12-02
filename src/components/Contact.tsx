@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import Button from "./Button";
-import axios from "axios";
+// import axios from "axios";
 import { Highlight, themes } from "prism-react-renderer";
-import { contactData, toastMessages, personalData } from "../assets/lib/data.tsx";
+import { contactData, personalData } from "../assets/lib/data.tsx";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import { useTheme } from "../context/theme-context";
 import { motion, useScroll, useTransform } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact: React.FC = () => {
-  const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
+  // const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
 
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
-  const [error, setError] = useState<string | any>(null);
+  // const [error, setError] = useState<string | any>(null);
 
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   const notifySentForm: React.FormEventHandler<HTMLFormElement> = async (e) => {
-    setError(null);
+    // setError(null);
 
     e.preventDefault();
     // @ts-expect-error: window is needed
@@ -69,7 +69,7 @@ const Contact: React.FC = () => {
     indentation: string
   ) => {
     const words = text.split(" ");
-    let lines: string[] = [];
+    const lines: string[] = [];
     let currentLine = "";
 
     words.forEach((word) => {
