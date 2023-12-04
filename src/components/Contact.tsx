@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
   // const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "";
 
   const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
+  // const [email, setEmail] = useState<string>("");
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [cursor, setCursor] = useState<string>("");
@@ -97,9 +97,11 @@ const Contact: React.FC = () => {
 
     if (name === "name") {
       setName(value);
-    } else if (name === "email") {
-      setEmail(value);
-    } else if (name === "subject") {
+    } 
+    // else if (name === "email") {
+    //   setEmail(value);
+    // }
+     else if (name === "subject") {
       setSubject(value);
     } else if (name === "message") {
       setMessage(value);
@@ -211,8 +213,8 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
                 value={
                   input.name === "name"
                     ? name
-                    : input.name === "email"
-                    ? email
+                    // : input.name === "email"
+                    // ? email
                     : input.name === "subject"
                     ? subject
                     : message
