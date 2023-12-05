@@ -41,9 +41,9 @@ export default function LanguageContextProvider({
       if (localLanguage === "DE") {
         document.documentElement.classList.add("DE");
       }
-    } else if (window.matchMedia("(prefers-color-scheme: DE)").matches) {
-      setLanguage("DE");
-      document.documentElement.classList.add("DE");
+    } else if (window.matchMedia("(prefers-color-scheme: EN)").matches) {
+      setLanguage("EN");
+      document.documentElement.classList.add("EN");
     }
   }, []);
 

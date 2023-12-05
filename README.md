@@ -4,9 +4,7 @@ This is a portfolio website built using React, Tailwind CSS, and TypeScript. The
 
 ## Demo
 
-<img src="./screenshot.jpg" alt="Screenshot" width="1080"/>
-
-You can also check out the live demo of the portfolio website [here](https://alpaycelik.dev).
+You can also check out the live demo of the portfolio website [here](https://rahulsaini-portfolio.vercel.app/).
 
 ## Features
 
@@ -56,4 +54,4 @@ To run this project, you will need to add the following environment variables to
 
 ## Support
 
-If you find this project helpful or would like to support my work, you can ⭐ this Repo
+If you find this project helpful or would like to support, you can ⭐ original repo: https://github.com/AlpayC/portfolio_site

@@ -20,9 +20,8 @@ import apiicon from "../../assets/icons/apiicon.svg";
 // import rendericon from "../../assets/icons/rendericon.svg";
 // import jwticon from "../../assets/icons/jwticon.svg";
 import yogaicon from "../../assets/icons/yogaicon.svg";
-import tastyMockup from "../../assets/img/tasty_mockup.webp";
-import instorMockup from "../../assets/img/instor_mockup.webp";
-import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+// import instorMockup from "../../assets/img/instor_mockup.webp";
+// import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
 import profilepicture from "../img/me3.jpeg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -122,7 +121,7 @@ export const projectsData = [
       { name: "Codepush", icon: reacticon },
 
     ],
-    image: tastyMockup,
+    // image: tastyMockup,
     // deploymenturl: "",
     // githuburl: "",
     githubicon: FiGithub,
@@ -152,7 +151,7 @@ export const projectsData = [
       { name: "Tailwind", icon: reacticon },
 
     ],
-    image: silentmoonMockup,
+    // image: silentmoonMockup,
     deploymenturl: "",
     githuburl:"",
     githubicon: FiGithub,
@@ -183,7 +182,7 @@ export const projectsData = [
       { name: "CI/CD", icon: apiicon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -211,7 +210,7 @@ export const projectsData = [
       { name: "Chrome Extension", icon: apiicon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -238,7 +237,7 @@ export const projectsData = [
       { name: "CSS", icon: reacticon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -266,7 +265,7 @@ export const projectsData = [
       { name: "Codepush", icon: reacticon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -292,7 +291,7 @@ export const projectsData = [
       { name: "Codepush", icon: reacticon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -320,7 +319,7 @@ export const projectsData = [
       { name: "Codepush", icon: reacticon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -345,7 +344,7 @@ export const projectsData = [
       { name: "App Store Listing", icon: reacticon },
       { name: "Git", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,
@@ -370,7 +369,7 @@ export const projectsData = [
       { name: "PHP", icon: reacticon },
       { name: "MySQL", icon: reacticon },
     ],
-    image: instorMockup,
+    // image: instorMockup,
     deploymenturl: "",
     githuburl: "",
     githubicon: FiGithub,

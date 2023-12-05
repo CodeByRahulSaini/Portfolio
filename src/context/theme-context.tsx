@@ -29,15 +29,16 @@ export default function ThemeContextProvider({
   };
 
   useEffect(() => {
-    const localTheme = window.localStorage.getItem(
-      THEME_STORAGE_KEY
-    ) as Theme | null;
-    const preferredColorScheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches
-      ? "dark"
-      : "light";
-    const initialTheme = localTheme || preferredColorScheme;
+    // const localTheme = window.localStorage.getItem(
+    //   THEME_STORAGE_KEY
+    // ) as Theme | null;
+    // const preferredColorScheme = window.matchMedia(
+    //   "(prefers-color-scheme: dark)"
+    // ).matches
+    //   ? "dark"
+    //   : "";
+    // const initialTheme = localTheme || preferredColorScheme;
+    const initialTheme = "light";
 
     setTheme(initialTheme);
     document.documentElement.classList.add(initialTheme);

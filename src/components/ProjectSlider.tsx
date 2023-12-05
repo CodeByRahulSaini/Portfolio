@@ -164,11 +164,11 @@ const ProjectSlider: React.FC = () => {
                 className="bg-darkblue flex flex-col gap-10 w-[80%] h-full  border-lightblue border-[0.4rem] p-8 rounded-xl mb-10 min-[1024px]:hidden max-lg:w-[90%]"
               >
                 <h2 className="text-white">{project.title}</h2>
-                <img
+                {/* <img
                   src={project.image}
                   alt={project.image}
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
-                />
+                /> */}
                 <div className="buttons flex gap-10 max-lg:flex-col">
                   {/* <Button
                     label="Live Demo"
