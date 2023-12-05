@@ -9,6 +9,7 @@ import {
 import { sideBarLeftSocials } from "../assets/lib/data";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { TbBrandOpenai } from "react-icons/tb";
 
 export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
@@ -134,6 +135,33 @@ export default function ThemeSwitch() {
           rel="noopener noreferrer"
         >
           <BsFillEnvelopeAtFill />
+        </Link>
+      </button>
+      <button
+        className={`shortcut-btn fixed -z-10  right-10  w-[4rem] h-[4rem] bg-opacity-80 backdrop-blur-[0.5rem] border border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950 ${
+          theme === "dark" ? "bg-[--darkblue]" : "bg-white"
+        }
+        ${
+          isTooltipVisible
+            ? "z-10 opacity-100 bottom-[16rem]"
+            : "-z-10 opacity-0"
+        }
+        
+        ${isMobile ? "top-72" : "bottom-5 pointer-events-auto"}
+        ${
+          isMobile && isTooltipVisible
+            ? "pointer-events-auto"
+            : "pointer-events-none"
+        }
+        `}
+        aria-label="Ask ChatGPT about me"
+      >
+        <Link
+          to={sideBarLeftSocials[3].link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TbBrandOpenai />
         </Link>
       </button>
     </div>
