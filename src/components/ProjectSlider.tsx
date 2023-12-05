@@ -197,15 +197,17 @@ const ProjectSlider: React.FC = () => {
                   </h3>
                   <div className="grid grid-cols-3 gap-10 p-4">
                     {project.technologies.map(
-                      (technology, innerIndex: number) => (
-                        <img
-                          key={innerIndex}
-                          src={technology.icon}
-                          alt={`${project.title}-icon`}
-                          className="h-[5rem] w-[60%] "
-                          data-tooltip-id="my-tooltip"
-                          data-tooltip-content={technology.name}
-                        />
+                      (technology) => (
+                        <span className="text-white text-[1.4rem]">{technology.name}</span>
+
+                        // <img
+                        //   key={innerIndex}
+                        //   src={technology.icon}
+                        //   alt={`${project.title}-icon`}
+                        //   className="h-[5rem] w-[60%] "
+                        //   data-tooltip-id="my-tooltip"
+                        //   data-tooltip-content={technology.name}
+                        // />
                       )
                     )}
                   </div>
