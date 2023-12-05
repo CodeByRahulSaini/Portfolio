@@ -100,7 +100,7 @@ const ProjectSlider: React.FC = () => {
                   key={index}
                   className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
                 >
-                  <div className=" w-[55%] flex flex-col gap-12 justify-between ">
+                  <div className="  flex flex-col gap-12 justify-between ">
                     <h2>{project.title}</h2>
 
                     <p className="text-white">
@@ -114,15 +114,16 @@ const ProjectSlider: React.FC = () => {
                       </h3>
                       <div className="grid grid-cols-6 gap-10 p-4">
                         {project.technologies.map(
-                          (technology, innerIndex: number) => (
-                            <img
-                              key={innerIndex}
-                              src={technology.icon}
-                              alt={`${project.title}-icon`}
-                              className="h-[5rem] w-[60%] "
-                              data-tooltip-id="my-tooltip"
-                              data-tooltip-content={technology.name}
-                            />
+                          (technology) => (
+                            <span className="text-[1.4rem]">{technology.name}</span>
+                            // <img
+                            //   key={innerIndex}
+                            //   src={technology.icon}
+                            //   alt={`${project.title}-icon`}
+                            //   className="h-[5rem] w-[60%] "
+                            //   data-tooltip-id="my-tooltip"
+                            //   data-tooltip-content={technology.name}
+                            // />
                           )
                         )}
                       </div>
@@ -146,14 +147,14 @@ const ProjectSlider: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="right-content relative h-[40rem] overflow-hidden rounded-xl w-[40%] transition-all duration-200 shadow-2xl">
+                  {/* <div className="right-content relative h-[40rem] overflow-hidden rounded-xl w-[40%] transition-all duration-200 shadow-2xl">
                     <img
                       src={project.image}
                       alt={`${project.title}-project-mockup`}
                       className={`w-full h-auto transition-all duration-[6000ms] transform opacity-100 hover:translate-y-[-50%] 
                       `}
                     />
-                  </div>
+                  </div> */}
                 </SwiperSlide>
               ))}
             </Swiper>

@@ -4,7 +4,7 @@ import React from "react";
 
 const SiteBarLeft: React.FC = () => {
   return (
-    <div className="absolute flex items-center flex-col  bottom-0 right-0 mr-8  h-[50vh] max-lg:hidden ">
+    <div className="absolute flex items-center flex-col  bottom-0 right-0 mr-8  h-[70vh] max-lg:hidden ">
       <div className=" h-[65%] w-[4rem] flex items-center justify-center ">
         <Link
           to={sideBarRightMail.link}

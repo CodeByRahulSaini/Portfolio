@@ -1,4 +1,4 @@
-import canvaicon from "../../assets/icons/canvaicon.svg";
+// import canvaicon from "../../assets/icons/canvaicon.svg";
 import figmaicon from "../../assets/icons/figmaicon.svg";
 import htmlicon from "../../assets/icons/htmlicon.svg";
 import cssicon from "../../assets/icons/cssicon.svg";
@@ -12,13 +12,13 @@ import tailwindcssicon from "../../assets/icons/tailwindicon.svg";
 import mongodbicon from "../../assets/icons/mongoicon.svg";
 import expressicon from "../../assets/icons/expressicon.svg";
 import sassscssicon from "../../assets/icons/sassicon.svg";
-import trelloicon from "../../assets/icons/trelloicon.svg";
+// import trelloicon from "../../assets/icons/trelloicon.svg";
 import apiicon from "../../assets/icons/apiicon.svg";
-import axiosicon from "../../assets/icons/axiosicon.svg";
-import spotifyicon from "../../assets/icons/spotifyicon.svg";
-import netlifyicon from "../../assets/icons/netlifyicon.svg";
-import rendericon from "../../assets/icons/rendericon.svg";
-import jwticon from "../../assets/icons/jwticon.svg";
+// import axiosicon from "../../assets/icons/axiosicon.svg";
+// import spotifyicon from "../../assets/icons/spotifyicon.svg";
+// import netlifyicon from "../../assets/icons/netlifyicon.svg";
+// import rendericon from "../../assets/icons/rendericon.svg";
+// import jwticon from "../../assets/icons/jwticon.svg";
 import yogaicon from "../../assets/icons/yogaicon.svg";
 import tastyMockup from "../../assets/img/tasty_mockup.webp";
 import instorMockup from "../../assets/img/instor_mockup.webp";
@@ -35,15 +35,26 @@ import githubicon from "../../assets/icons/githubicon.svg";
 import awsicon from "../../assets/icons/awsicon.svg";
 import dockericon from "../../assets/icons/dockericon.svg";
 import jesticon from "../../assets/icons/jesticon.svg";
-import cypressicon from "../../assets/icons/cypressicon.svg";
+// import cypressicon from "../../assets/icons/cypressicon.svg";
 import mysqlicon from "../../assets/icons/mysqlicon.svg";
 import reduxicon from "../../assets/icons/reduxicon.svg";
 import websocketicon from "../../assets/icons/websocketicon.svg";
+import web3 from "../../assets/icons/web3.svg";
+import chatgpt from "../../assets/icons/chatgpt.svg";
 
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { TbBrandOpenai } from "react-icons/tb";
+
 // import Imprint from "../../components/Imprint";
 // import Privacy from "../../components/Privacy";
+export const personalData = {
+  email: 'rahul_saini_@outlook.com',
+  linkedin: 'https://www.linkedin.com/in/rahul-saini-profile/',
+  github: 'https://github.com/CodeByRahulSaini',
+  chatgpt: 'https://chat.openai.com/g/g-NESK8QsGG-hellorahul',
+} as const;
+
 
 export const headerIntroData = {
   title: {
@@ -57,11 +68,22 @@ export const headerIntroData = {
   },
   buttons: [
     {
+      name: "",
+      label: {
+        de: "",
+        en: "Ask ChatGPT about me",
+      },
+      link: personalData.chatgpt,
+      icon: TbBrandOpenai,
+      color: "secondary-btn",
+    },
+    {
       name: "Contact",
       label: {
         de: "",
         en: "Contact me",
       },
+      link: '',
       icon: FiMail,
       color: "main-btn",
     },
@@ -72,6 +94,7 @@ export const headerIntroData = {
         en: "My Projects",
       },
       icon: FiGithub,
+      link: '',
       color: "secondary-btn",
     },
   ],
@@ -85,15 +108,19 @@ export const projectsData = [
     description_EN:
       "Contributed to the development of Gobble, a social group ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding. Worked on major gobble party feature with real-time operations using Socket.io, boosting engagement by 15%. Integrated Firebase analytics into Gobble App to track user activities, uncover user journey insights, and analyze user behavior patterns; leveraged data-driven insights to optimize user experience and increase retention.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "REST Api", icon: apiicon },
-      { name: "React", icon: reacticon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Canva", icon: canvaicon },
-      { name: "Netlify", icon: netlifyicon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "React Native", icon: htmlicon },
+      { name: "GraphQL", icon: cssicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "Websockets", icon: apiicon },
+      { name: "New Relic", icon: reacticon },
+      { name: "AWS", icon: reacticon },
+      { name: "Stripe", icon: reacticon },
+      { name: "k6", icon: reacticon },
+      { name: "App Store Listing", icon: reacticon },
+      { name: "Codepush", icon: reacticon },
+
     ],
     image: tastyMockup,
     // deploymenturl: "",
@@ -113,18 +140,17 @@ export const projectsData = [
     description_EN:
       "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules through interactive slides, videos, quizzes, games, simulated phishing emails, and comprehensive reporting. Additionally, crafted an interactive educational game within the platform to facilitate hands-on learning of crucial cybersecurity.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
+      { name: "React", icon: htmlicon },
+      { name: "Typescript", icon: cssicon },
+      { name: "Next JS", icon: cssicon },
+      { name: "GraphQL", icon: cssicon },
+      { name: "Apollo cache", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "Nest JS", icon: apiicon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "AWS", icon: reacticon },
+      { name: "Tailwind", icon: reacticon },
+
     ],
     image: silentmoonMockup,
     deploymenturl: "",
@@ -145,18 +171,17 @@ export const projectsData = [
     description_EN:
       "An automated platform for contract management, distribution, reporting, and payouts between labels and artists. Architected a multi-user single entity system allowing users to assume various roles (artist, label, admins, managers); integrated DocuSign for dynamic contracts, sendgrid for communication, and third-party APIs to fetch song stats from Spotify, Twitch, and other platforms.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "Redux", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "Docusign", icon: apiicon },
+      { name: "Paypal", icon: apiicon },
+      { name: "Github Actions", icon: apiicon },
+      { name: "IAM", icon: apiicon },
+      { name: "RBAC", icon: apiicon },
+      { name: "CI/CD", icon: apiicon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -177,18 +202,14 @@ export const projectsData = [
     description_EN:
       "Created an advanced YouTube analytics platform enabling creators to monitor their video performance and access their competition's data. The platform offers daily updates through an intuitive dashboard, helping users make informed decisions.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "Redux", icon: figmaicon },
+      { name: "Youtube/Google APIs", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "Auth2.0", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "Chrome Extension", icon: apiicon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -209,18 +230,13 @@ export const projectsData = [
     description_EN:
       "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "Redux", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "HTML", icon: reacticon },
+      { name: "CSS", icon: reacticon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -239,20 +255,16 @@ export const projectsData = [
     description:
       "",
     description_EN:
-      "Collaborated with a team of 5 members to create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
+      "Led a team of 5 members to create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "React Native", icon: htmlicon },
+      { name: "GraphQL", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "App Store Listing", icon: reacticon },
+      { name: "Codepush", icon: reacticon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -271,20 +283,14 @@ export const projectsData = [
     description:
       "",
     description_EN:
-      "Developedanappthatfacilitatesrentingparking spaces, including those in front of houses, personal garages, and similar locations. The app features a map display for users to find nearby available spaces and offers booking functionality.",
+      "Developed an app that facilitates renting parking spaces, including those in front of houses, personal garages, and similar locations. The app features a map display for users to find nearby available spaces and offers booking functionality.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "React Native", icon: htmlicon },
+      { name: "Redux", icon: htmlicon },
+      { name: "App Store Listing", icon: reacticon },
+      { name: "Codepush", icon: reacticon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -305,18 +311,14 @@ export const projectsData = [
     description_EN:
       "Empowered students to engage in subject-specific quizzes crafted by teachers, complete with a leaderboard for tracking progress and generating detailed reports.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "React", icon: htmlicon },
+      { name: "React Native", icon: htmlicon },
+      { name: "Redux", icon: htmlicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "App Store Listing", icon: reacticon },
+      { name: "Codepush", icon: reacticon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -337,18 +339,11 @@ export const projectsData = [
     description_EN:
       "Professional drivers for hire to drive impaired individuals and their cars to their home.",
     technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Ionic", icon: htmlicon },
+      { name: "Angular", icon: htmlicon },
+      { name: "Redux", icon: htmlicon },
+      { name: "App Store Listing", icon: reacticon },
+      { name: "Git", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -371,16 +366,9 @@ export const projectsData = [
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
+      { name: "Jquery", icon: javascripticon },
+      { name: "PHP", icon: reacticon },
+      { name: "MySQL", icon: reacticon },
     ],
     image: instorMockup,
     deploymenturl: "",
@@ -399,7 +387,7 @@ export const projectsData = [
 export const liveTickerData = {
   content: {
     de: "",
-    en: "More Projects on Github",
+    en: "Get to Know Me via ChatGPT",
   },
 } as const;
 
@@ -456,16 +444,16 @@ export const skillsDataFrontEnd = [
         color: "#38B2AC",
       },
       {
-        title: "HTML",
-        hash: "#html",
-        icon: htmlicon,
-        color: "#F1662A",
-      },
-      {
         title: "SASS/SCSS",
         hash: "#SASS/SCSS",
         icon: sassscssicon,
         color: "#CC6699",
+      },
+      {
+        title: "HTML",
+        hash: "#html",
+        icon: htmlicon,
+        color: "#F1662A",
       },
       {
         title: "CSS",
@@ -515,7 +503,7 @@ export const skillsDataBackEnd = [
         title: "WebSocket",
         hash: "#WebSocket",
         icon: websocketicon,
-        color: "#fff",
+        color: "#764ABC",
       }, 
 
 
@@ -528,7 +516,19 @@ export const skillsDataAlso = [
     skillsTitle: "",
     skills: [
       {
-        title: "Jest",
+        title: "Web3",
+        hash: "#Web3",
+        icon: web3,
+        color: "#1F3647",
+      },
+      {
+        title: "ChatGPT/OpenAI APIs",
+        hash: "#ChatGPT",
+        icon: chatgpt,
+        color: "#10A37F",
+      },
+      {
+        title: "TDD: Jest, Cypress",
         hash: "#Jest",
         icon: jesticon,
         color: "#99425b",
@@ -539,12 +539,12 @@ export const skillsDataAlso = [
       //   icon: wordpressicon,
       //   color: "#21759B",
       // },
-      {
-        title: "Cypress",
-        hash: "#Cypress",
-        icon: cypressicon,
-        color: "#69D3A7",
-      },
+      // {
+      //   title: "Cypress",
+      //   hash: "#Cypress",
+      //   icon: cypressicon,
+      //   color: "#69D3A7",
+      // },
       {
         title: "CI/CD",
         hash: "#CI/CD",
@@ -557,6 +557,9 @@ export const skillsDataAlso = [
         icon: awsicon,
         color: "#252f3e",
       },
+     
+
+      
       {
         title: "Docker",
         hash: "#Docker",
@@ -580,11 +583,6 @@ export const FooterLinks = [
   // { de: "", en: "Privacy", hash: "#privacy", data: <Privacy /> },
 ] as const;
 
-export const personalData = {
-  email: 'rahul_saini_@outlook.com',
-  linkedin: 'https://www.linkedin.com/in/rahul-saini-profile/',
-  github: 'https://github.com/CodeByRahulSaini',
-} as const;
 
 
 export const sideBarRightMail = {
@@ -608,6 +606,11 @@ export const sideBarLeftSocials = [
     icon: FiMail,
     altimgname: "mail",
   },
+  {
+    link: personalData.chatgpt,
+    icon: TbBrandOpenai,
+    altimgname: "chatgpt",
+  },
 ] as const;
 
 export const quotesData = [
@@ -618,8 +621,8 @@ export const quotesData = [
   },
   {
     de: '',
-    en: `"If something is important enough, even if the odds are against you, you should still do it."`,
-    author: 'Elon Musk'
+    en: `"The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life."`,
+    author: 'Bill Gates'
   },
 ] as const;
 

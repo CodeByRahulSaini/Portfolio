@@ -44,10 +44,11 @@ const HeaderIntro: React.FC = () => {
             key={index}
             label={language === "DE" ? button.label.de : button.label.en}
             iconSVG={button.icon}
-            link={`#${button.name.toLocaleLowerCase()}`}
+            link={button.link || `#${button.name.toLocaleLowerCase()}`}
             buttoncolor={button.color}
+            target={button.link && '_blank'}
             onClick={() => {
-              setActiveSection(button.name);
+              button.name && setActiveSection(button.name);
               setTimeOfLastClick(Date.now());
             }}
           />

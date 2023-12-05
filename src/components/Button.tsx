@@ -7,6 +7,7 @@ interface ButtonProps {
   value?: string;
   className?: string;
   link?: string;
+  target?: string;
   iconcolor?: string;
   iconSVG?: React.FC<{ className: string }>;
   buttoncolor?: string;
@@ -23,6 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   iconSVG: IconSVGComponent,
   buttoncolor,
   buttonhovercolor,
+  target,
   type,
   elementType,
 }) => {
@@ -37,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
     return <input {...commonProps} value={value}></input>;
   } else {
     return (
-      <Link to={link || ""} className="no-underline">
+      <Link to={link || ""} target={target} className="no-underline">
         <button {...commonProps}>
           {IconSVGComponent ? (
             <IconSVGComponent className={"w-max h-10"} />
