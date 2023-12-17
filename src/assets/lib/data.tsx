@@ -60,7 +60,7 @@ export const headerIntroData = {
     de: "",
     en: "Hi, I'm Rahul",
   },
-  subtitle: "Fullstack Engineer ",
+  subtitle: " ",
   description: {
     de: "",
     en: "With 6+ years with JavaScript, MERN, and React Native |  8+ years as Software Engineer | Skilled in working independently, collaborating in teams, and leading projects | Advocate for using technology for good.",
@@ -102,24 +102,33 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Gobble App",
+    title: "Gobble",
     description:"",
     description_EN:
-      "Contributed to the development of Gobble, a social group ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding. Worked on major gobble party feature with real-time operations using Socket.io, boosting engagement by 15%. Integrated Firebase analytics into Gobble App to track user activities, uncover user journey insights, and analyze user behavior patterns; leveraged data-driven insights to optimize user experience and increase retention.",
+      "Contributed to the development of Gobble, a social group ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding.",
+    tasks: [
+      'The entire cart functionality with the ability to apply discounts.',
+      'Integrated Firebase analytics into Gobble App to track user activities, uncover user journey insights, and analyze user behavior patterns; leveraged data-driven insights to optimize user experience and increase retention.',
+      'Worked on major gobble party feature with real-time operations using Socket.io',
+      'Restaurant search along with a map and banners to show promotions.',
+      'Payment functionality using Stripe.',
+      'Referral feature (utilized deferred deep linking).',
+      'Fixed major performance issues in the Gobble app, reducing significant RAM consumption. Its code was originally written by an inexperienced team, so we had to rewrite most of it.',
+      'Handled TestFlight builds, Play Store internal testing builds, and utilized Android Studio and Xcode for builds, icons, splash screens, and package linkings.',
+      "Managed releases and listings on the Google Play Store and Apple's App Store",
+    ],
     technologies: [
       { name: "React", icon: htmlicon },
       { name: "React Native", icon: htmlicon },
+      { name: "Redux", icon: cssicon },
       { name: "GraphQL", icon: cssicon },
-      { name: "Node JS", icon: javascripticon },
-      { name: "MongoDB", icon: apiicon },
-      { name: "Websockets", icon: apiicon },
-      { name: "New Relic", icon: reacticon },
-      { name: "AWS", icon: reacticon },
+      { name: "Firebase", icon: reacticon },
       { name: "Stripe", icon: reacticon },
-      { name: "k6", icon: reacticon },
       { name: "App Store Listing", icon: reacticon },
       { name: "Codepush", icon: reacticon },
-
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "AWS", icon: reacticon },
     ],
     // image: tastyMockup,
     // deploymenturl: "",
@@ -134,43 +143,26 @@ export const projectsData = [
     },
   },
   {
-    title: "Truesafe",
-    description:"",
-    description_EN:
-      "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules through interactive slides, videos, quizzes, games, simulated phishing emails, and comprehensive reporting. Additionally, crafted an interactive educational game within the platform to facilitate hands-on learning of crucial cybersecurity.",
-    technologies: [
-      { name: "React", icon: htmlicon },
-      { name: "Typescript", icon: cssicon },
-      { name: "Next JS", icon: cssicon },
-      { name: "GraphQL", icon: cssicon },
-      { name: "Apollo cache", icon: figmaicon },
-      { name: "Node JS", icon: javascripticon },
-      { name: "Nest JS", icon: apiicon },
-      { name: "MongoDB", icon: apiicon },
-      { name: "AWS", icon: reacticon },
-      { name: "Tailwind", icon: reacticon },
-
-    ],
-    // image: silentmoonMockup,
-    deploymenturl: "",
-    githuburl:"",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#FFD5BD",
-    },
-  },
-  {
     title: "Labelcaster",
     description:
       "",
     description_EN:
-      "An automated platform for contract management, distribution, reporting, and payouts between labels and artists. Architected a multi-user single entity system allowing users to assume various roles (artist, label, admins, managers); integrated DocuSign for dynamic contracts, sendgrid for communication, and third-party APIs to fetch song stats from Spotify, Twitch, and other platforms.",
+      "An automated platform for music distribution, contract management, reporting, and payouts between labels and artists.",
+    tasks: [
+      'Developed various features for artists, labels, admins, and managers in React native app and React Website.',
+      'Implemented a Music player for labels and artists to listen songs.',
+      'Integrated Payments using Paypal & Github actions for CI/CD.',
+      'Implemented responsive web design for cross-device compatibility.',
+      'Architected a multi-user single entity system with role-based functionalities.',
+      'Integrated DocuSign for dynamic contract management in the platform.',
+      'Implemented SendGrid for platform-wide email communication.',
+      'Handled API integrations with Spotify, Twitch, and other music platforms for data synchronization.',
+      'Managed the MongoDB database, designing efficient data storage and retrieval systems.',
+      'Developed Node.js APIs for backend functionality including contract management, distribution, reporting, and payouts.',
+    ],
     technologies: [
       { name: "React", icon: htmlicon },
+      { name: "React Native", icon: figmaicon },
       { name: "Redux", icon: figmaicon },
       { name: "Node JS", icon: javascripticon },
       { name: "MongoDB", icon: apiicon },
@@ -194,67 +186,21 @@ export const projectsData = [
       projectcolor: "#E3964A",
     },
   },
-  {
-    title: "VidSpy",
-    description:
-      "",
-    description_EN:
-      "Created an advanced YouTube analytics platform enabling creators to monitor their video performance and access their competition's data. The platform offers daily updates through an intuitive dashboard, helping users make informed decisions.",
-    technologies: [
-      { name: "React", icon: htmlicon },
-      { name: "Redux", icon: figmaicon },
-      { name: "Youtube/Google APIs", icon: figmaicon },
-      { name: "Node JS", icon: javascripticon },
-      { name: "Auth2.0", icon: javascripticon },
-      { name: "MongoDB", icon: apiicon },
-      { name: "Chrome Extension", icon: apiicon },
-      { name: "Git", icon: reacticon },
-    ],
-    // image: instorMockup,
-    deploymenturl: "",
-    githuburl: "",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
-    },
-  },
-  {
-    title: "Grail",
-    description:
-      "",
-    description_EN:
-      "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products.",
-    technologies: [
-      { name: "React", icon: htmlicon },
-      { name: "Redux", icon: figmaicon },
-      { name: "Node JS", icon: javascripticon },
-      { name: "MongoDB", icon: apiicon },
-      { name: "HTML", icon: reacticon },
-      { name: "CSS", icon: reacticon },
-      { name: "Git", icon: reacticon },
-    ],
-    // image: instorMockup,
-    deploymenturl: "",
-    githuburl: "",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
-    },
-  },
+
   {
     title: "MyStylist",
     description:
       "",
     description_EN:
-      "Led a team of 5 members to create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
+      "Create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
+    tasks:[
+      "Led a team of 5 members in developing an app for booking hairstylists and salon services.",
+      "Designed and implemented an extensive booking system with a calendar module.",
+      "Implemented user authentication and social media logins.",
+      "Utilized Redux for state management in the app.",
+      "Added Push Notifications using firebase.",
+      "Integrated a map feature to show nearby salons.",
+    ],
     technologies: [
       { name: "React", icon: htmlicon },
       { name: "React Native", icon: htmlicon },
@@ -282,7 +228,15 @@ export const projectsData = [
     description:
       "",
     description_EN:
-      "Developed an app that facilitates renting parking spaces, including those in front of houses, personal garages, and similar locations. The app features a map display for users to find nearby available spaces and offers booking functionality.",
+      "Developed an app that facilitates renting parking spaces, including those in front of houses, personal garages, and similar locations.",
+    tasks:[
+      "Integrated map for users to easily find nearby available parking spaces.",
+      "Implemented booking functionality within the app.",
+      "Integrated Stripe for payment processing.",
+      "Utilized Redux for efficient state management of the app.",
+      "Set up the initial boilerplate for the application's development.",
+      "Developed Node.js APIs with MongoDB database"
+    ],
     technologies: [
       { name: "React", icon: htmlicon },
       { name: "React Native", icon: htmlicon },
@@ -309,6 +263,14 @@ export const projectsData = [
       "",
     description_EN:
       "Empowered students to engage in subject-specific quizzes crafted by teachers, complete with a leaderboard for tracking progress and generating detailed reports.",
+      tasks:[
+        "Enabled students to participate in subject-specific quizzes created by teachers.",
+        "Integrated a leaderboard feature for tracking student progress.",
+        "Developed functionality for generating detailed reports on quiz performance.",
+        "Utilized Redux for state management within the application.",
+        "Added functionality for students to play quizzes effectively.",
+        "Developed Node.js APIs with MongoDB database"
+      ],
     technologies: [
       { name: "React", icon: htmlicon },
       { name: "React Native", icon: htmlicon },
@@ -332,16 +294,67 @@ export const projectsData = [
     },
   },
   {
-    title: "AngelLift",
+    title: "Truesafe",
+    description:"",
+    description_EN:
+      "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules.",
+    tasks: [
+      "Developed engaging training modules using interactive slides.",
+      "Integrated videos, quizzes, and games into the training modules.",
+      "Implemented simulated phishing email exercises for practical learning.",
+      "Contributed to the creation of comprehensive reporting features.",
+      "Crafted an interactive educational game within the platform to enhance hands-on learning of crucial cybersecurity concepts.",
+      "Developed Node.js APIs with MongoDB database"
+    ],
+    technologies: [
+      { name: "React", icon: htmlicon },
+      { name: "Typescript", icon: cssicon },
+      { name: "Next JS", icon: cssicon },
+      { name: "GraphQL", icon: cssicon },
+      { name: "Apollo cache", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "Nest JS", icon: apiicon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "AWS", icon: reacticon },
+      { name: "Tailwind", icon: reacticon },
+
+    ],
+    // image: silentmoonMockup,
+    deploymenturl: "",
+    githuburl:"",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#FFD5BD",
+    },
+  },
+  
+  {
+    title: "VidSpy",
     description:
       "",
     description_EN:
-      "Professional drivers for hire to drive impaired individuals and their cars to their home.",
+      "Created an advanced YouTube analytics platform enabling creators to monitor their video performance and access their competition's data. The platform offers daily updates through an intuitive dashboard, helping users make informed decisions.",
+      tasks:[
+        "Worked on creating and maintaining the React.js website for the platform.",
+        "Integrated OAuth 2.0 for Google authentication.",
+        "Enabled access to competitors data within the platform.",
+        "Designed and implemented a daily update feature through an intuitive dashboard.",
+        "Developed backend functionalities using Node.js APIs.",
+        "Managed data storage and retrieval with MongoDB database.",
+        "Utilized YouTube APIs to fetch relevant data for the platform.",
+      ],
     technologies: [
-      { name: "Ionic", icon: htmlicon },
-      { name: "Angular", icon: htmlicon },
-      { name: "Redux", icon: htmlicon },
-      { name: "App Store Listing", icon: reacticon },
+      { name: "React", icon: htmlicon },
+      { name: "Redux", icon: figmaicon },
+      { name: "Youtube/Google APIs", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "Auth2.0", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "Chrome Extension", icon: apiicon },
       { name: "Git", icon: reacticon },
     ],
     // image: instorMockup,
@@ -356,31 +369,83 @@ export const projectsData = [
       projectcolor: "#E3964A",
     },
   },
-  {
-    title: "Kali Mirchi",
-    description:
-      "",
-    description_EN:
-      "A restaurant management website that empowers restaurant owners to create menus, submenus, and seamlessly handle order payments, streamlining restaurant operations.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "Jquery", icon: javascripticon },
-      { name: "PHP", icon: reacticon },
-      { name: "MySQL", icon: reacticon },
-    ],
-    // image: instorMockup,
-    deploymenturl: "",
-    githuburl: "",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
-    },
-  },
+  // {
+  //   title: "Grail",
+  //   description:
+  //     "",
+  //   description_EN:
+  //     "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products.",
+  //   technologies: [
+  //     { name: "React", icon: htmlicon },
+  //     { name: "Redux", icon: figmaicon },
+  //     { name: "Node JS", icon: javascripticon },
+  //     { name: "MongoDB", icon: apiicon },
+  //     { name: "HTML", icon: reacticon },
+  //     { name: "CSS", icon: reacticon },
+  //     { name: "Git", icon: reacticon },
+  //   ],
+  //   // image: instorMockup,
+  //   deploymenturl: "",
+  //   githuburl: "",
+  //   githubicon: FiGithub,
+  //   deploymenticon: FiLink,
+  //   colors: {
+  //     main: "main-btn",
+  //     second: "secondary-btn",
+  //     icon: "white",
+  //     projectcolor: "#E3964A",
+  //   },
+  // },
+  // {
+  //   title: "AngelLift",
+  //   description:
+  //     "",
+  //   description_EN:
+  //     "Professional drivers for hire to drive impaired individuals and their cars to their home.",
+  //   technologies: [
+  //     { name: "Ionic", icon: htmlicon },
+  //     { name: "Angular", icon: htmlicon },
+  //     { name: "Redux", icon: htmlicon },
+  //     { name: "App Store Listing", icon: reacticon },
+  //     { name: "Git", icon: reacticon },
+  //   ],
+  //   // image: instorMockup,
+  //   deploymenturl: "",
+  //   githuburl: "",
+  //   githubicon: FiGithub,
+  //   deploymenticon: FiLink,
+  //   colors: {
+  //     main: "main-btn",
+  //     second: "secondary-btn",
+  //     icon: "white",
+  //     projectcolor: "#E3964A",
+  //   },
+  // },
+  // {
+  //   title: "Kali Mirchi",
+  //   description:
+  //     "",
+  //   description_EN:
+  //     "A restaurant management website that empowers restaurant owners to create menus, submenus, and seamlessly handle order payments, streamlining restaurant operations.",
+  //   technologies: [
+  //     { name: "Html", icon: htmlicon },
+  //     { name: "CSS", icon: cssicon },
+  //     { name: "Jquery", icon: javascripticon },
+  //     { name: "PHP", icon: reacticon },
+  //     { name: "MySQL", icon: reacticon },
+  //   ],
+  //   // image: instorMockup,
+  //   deploymenturl: "",
+  //   githuburl: "",
+  //   githubicon: FiGithub,
+  //   deploymenticon: FiLink,
+  //   colors: {
+  //     main: "main-btn",
+  //     second: "secondary-btn",
+  //     icon: "white",
+  //     projectcolor: "#E3964A",
+  //   },
+  // },
 ] as const;
 
 export const liveTickerData = {

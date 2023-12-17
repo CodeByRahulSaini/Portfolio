@@ -86,11 +86,11 @@ const ProjectSlider: React.FC = () => {
               modules={[EffectCards, Autoplay, Pagination]}
               className=" w-[60vw] max-lg:hidden min-[1921px]:px-96"
               loop={true}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: true,
-                pauseOnMouseEnter: true,
-              }}
+              // autoplay={{
+              //   delay: 15000,
+              //   disableOnInteraction: true,
+              //   pauseOnMouseEnter: true,
+              // }}
               pagination={{
                 clickable: true,
               }}
@@ -98,6 +98,7 @@ const ProjectSlider: React.FC = () => {
               {projectsData.map((project, index: number) => (
                 <SwiperSlide
                   key={index}
+                  
                   className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
                 >
                   <div className="  flex flex-col gap-12 justify-between ">
@@ -108,11 +109,20 @@ const ProjectSlider: React.FC = () => {
                         ? project.description
                         : project.description_EN}
                     </p>
+                    <div>
+                      <h4>
+                        My Tasks
+                      </h4>
+                      {/* <p className=" font-thin" >My Tasks:</p> */}
+                      <ul>
+                        {project.tasks?.map(task=><li>{task}</li>)}
+                      </ul>
+                    </div> 
                     <div className="technologies">
-                      <h3>
+                      <h4>
                         {language === "DE" ? "Technologien" : "Technologies"}
-                      </h3>
-                      <div className="grid grid-cols-6 gap-10 p-4">
+                      </h4>
+                      <div className="grid grid-cols-6 gap-3 p-4">
                         {project.technologies.map(
                           (technology) => (
                             <span className="text-[1.4rem]">{technology.name}</span>
