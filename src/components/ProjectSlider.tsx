@@ -1,10 +1,8 @@
 import bannerBg from "../assets/img/bannerbg.webp";
 import React, { useRef } from "react";
-// import Button from "./Button";
-import LiveTicker from "./ParallaxText";
 import { projectsData } from "../assets/lib/data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCards, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide, } from "swiper/react";
+import { Autoplay, EffectCards, Pagination, Navigation } from "swiper/modules";
 import { ToastContainer } from "react-toastify";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
@@ -78,23 +76,29 @@ const ProjectSlider: React.FC = () => {
               </p>
               <h2 className="text-[--white] mb-16">
                 {language === "DE" ? "Meine Projekte" : "My Projects"}
-              </h2>
+              </h2> 
             </motion.div>
             <Swiper
-              effect={"cards"}
+              effect="cards"
               grabCursor={true}
-              modules={[EffectCards, Autoplay, Pagination]}
+              modules={[EffectCards, Autoplay, Pagination, Navigation]}
               className=" w-[60vw] max-lg:hidden min-[1921px]:px-96"
               loop={true}
-              // autoplay={{
-              //   delay: 15000,
-              //   disableOnInteraction: true,
-              //   pauseOnMouseEnter: true,
-              // }}
+              navigation
+              scrollbar={{ draggable: true }}
+              autoplay={{
+                delay: 15000,
+                disableOnInteraction: true,
+                pauseOnMouseEnter: true,
+              }}
               pagination={{
                 clickable: true,
               }}
+              // effect="coverflow"
+              // style={{ alignItems: "center" }}
+            
             >
+             
               {projectsData.map((project, index: number) => (
                 <SwiperSlide
                   key={index}
@@ -109,19 +113,19 @@ const ProjectSlider: React.FC = () => {
                         ? project.description
                         : project.description_EN}
                     </p>
-                    <div>
-                      <h4>
+                    {/* <div> */}
+                      {/* <h4>
                         My Tasks
-                      </h4>
+                      </h4> */}
                       {/* <p className=" font-thin" >My Tasks:</p> */}
                       <ul>
                         {project.tasks?.map(task=><li>{task}</li>)}
                       </ul>
-                    </div> 
+                    {/* </div>  */}
                     <div className="technologies">
-                      <h4>
+                      {/* <h4>
                         {language === "DE" ? "Technologien" : "Technologies"}
-                      </h4>
+                      </h4> */}
                       <div className="grid grid-cols-6 gap-3 p-4">
                         {project.technologies.map(
                           (technology) => (
@@ -226,7 +230,6 @@ const ProjectSlider: React.FC = () => {
             ))}
           </div>
         </div>
-        <LiveTicker />
       </section>
       <ReactTooltip
         place="top"

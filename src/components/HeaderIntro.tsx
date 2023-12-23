@@ -14,17 +14,21 @@ const HeaderIntro: React.FC = () => {
 
   return (
     <section
-      className="hero flex flex-col justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
+      className="hero flex flex-col  justify-center gap-10 items-center h-full max-lg:h-full max-lg:gap-6"
       ref={ref}
       id="home"
     >
-      <RadialGradient scale="scale-y-125" opacity="opacity-30" />
+      <RadialGradient scale="scale-y-125" opacity="opacity-30"  />
 
-      <img
+      <h1 className="w-[18rem] h-[18rem] max-sm:w-[14rem] max-sm:h-[14rem] drop-shadow-2xl shadow-2xl avatar-img   flex items-center justify-center text-9xl font-bold text-black bg-gray-800 rounded-full">
+        {headerIntroData.initials}
+      </h1>
+      {/* <img
         src={headerIntroData.profilepicture}
         alt={headerIntroData.profilepicture}
         className="w-1/6 drop-shadow-2xl rounded-full shadow-2xl avatar-img max-lg:w-3/4"
-      />
+        style={{ filter: "blur(4px)", opacity: 0.8 }}
+      /> */}
       <h1>
         {language === "DE"
           ? headerIntroData.title.de
@@ -32,7 +36,7 @@ const HeaderIntro: React.FC = () => {
         <span className="wave text-7xl">&#128075;&#127997;</span>
       </h1>
       <h2>{headerIntroData.subtitle}</h2>
-      <p className="w-1/2 text-center max-lg:hidden">
+      <p className="w-1/2 text-center max-sm:hidden">
         {language === "DE"
           ? headerIntroData.description.de
           : headerIntroData.description.en}

@@ -449,6 +449,10 @@ a {
   display: inline-block;
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);

@@ -22,6 +22,13 @@ import apiicon from "../../assets/icons/apiicon.svg";
 import yogaicon from "../../assets/icons/yogaicon.svg";
 // import instorMockup from "../../assets/img/instor_mockup.webp";
 // import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import recommendation1 from "../../assets/img/recommendation1.webp";
+import recommendation2 from "../../assets/img/recommendation2.webp";
+import recommendation3 from "../../assets/img/recommendation3.webp";
+import recommendation4 from "../../assets/img/recommendation4.webp";
+import recommendation5 from "../../assets/img/recommendation5.webp";
+import recommendation6 from "../../assets/img/recommendation6.webp";
+import recommendation7 from "../../assets/img/recommendation7.webp";
 import profilepicture from "../img/me3.jpeg";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
@@ -41,7 +48,7 @@ import websocketicon from "../../assets/icons/websocketicon.svg";
 import web3 from "../../assets/icons/web3.svg";
 import chatgpt from "../../assets/icons/chatgpt.svg";
 
-import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
+import { GoHome, GoPerson, GoMail, GoStack, GoProject , GoSmiley} from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import { TbBrandOpenai } from "react-icons/tb";
 
@@ -63,8 +70,9 @@ export const headerIntroData = {
   subtitle: " ",
   description: {
     de: "",
-    en: "With 6+ years with JavaScript, MERN, and React Native |  8+ years as Software Engineer | Skilled in working independently, collaborating in teams, and leading projects | Advocate for using technology for good.",
+    en: "With over 6 years of experience in building mobile and web applications, I have worked with numerous startups and companies to develop products across various domains, including Education, SaaS, E-commerce, Travel, Food, Cybersecurity, Music, and Beauty. I am a problem-solver, a quick learner, and I love working with new technologies while sharpening my skills in existing ones.",
   },
+  initials: "RS",
   buttons: [
     {
       name: "",
@@ -539,30 +547,30 @@ export const skillsDataBackEnd = [
         icon: nodejsicon,
         color: "#339933",
       },
-      {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "GraphQL",
-        hash: "#GraphQL",
-        icon: graphqlicon,
-        color: "#e535ab",
-      },
+      // {
+      //   title: "Express",
+      //   hash: "#Express",
+      //   icon: [expressicon, expressiconwhite],
+      //   color: ["#000000", "#FFFFFF"],
+      // },
+      // {
+      //   title: "GraphQL",
+      //   hash: "#GraphQL",
+      //   icon: graphqlicon,
+      //   color: "#e535ab",
+      // },
       {
         title: "MongoDB",
         hash: "#MongoDB",
         icon: mongodbicon,
         color: "#449C45",
       },
-      {
-        title: "MySQL",
-        hash: "#MySQL",
-        icon: mysqlicon,
-        color: "#00546B",
-      }, 
+      // {
+      //   title: "MySQL",
+      //   hash: "#MySQL",
+      //   icon: mysqlicon,
+      //   color: "#00546B",
+      // }, 
       {
         title: "WebSocket",
         hash: "#WebSocket",
@@ -638,6 +646,7 @@ export const navLinks = [
   { de: "", en: "Home", hash: "#home", icon: GoHome },
   { de: "", en: "Skills", hash: "#skills", icon: GoStack },
   { de: "", en: "Projects", hash: "#projects", icon: GoProject },
+  { de: "", en: "Kudos", hash: "#kudos", icon: GoSmiley },
   { de: "", en: "About me", hash: "#about-me", icon: GoPerson },
   { de: "", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
@@ -850,6 +859,17 @@ export const buttonLabels = {
     en: "EN",
   },
 } as const;
+
+export const recommendations = [
+{ image : recommendation1 },
+{ image : recommendation2 },
+{ image : recommendation3 },
+{ image : recommendation4 },
+{ image : recommendation5 },
+{ image : recommendation6 },
+{ image : recommendation7 },
+] as const;
+
 
 export const directionStyles: Record<string, React.CSSProperties> = {
   "outer-right-to-inner-left": {

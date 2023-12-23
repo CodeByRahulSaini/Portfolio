@@ -6,6 +6,7 @@ import { useTheme } from "../context/theme-context";
 import { ScrollProgress } from "../components/ScrollProgress";
 import Divider from "../components/Divider";
 import ProjectSlider from "../components/ProjectSlider";
+import Recommendations from "../components/Recommendations";
 
 const LazyBannerQuote = lazy(() => import("../components/BannerQuote"));
 const LazySiteBarRight = lazy(() => import("../components/SideBarRight"));
@@ -73,6 +74,14 @@ const Home: React.FC = () => {
               dividerStyle="solid"
             />
             <ProjectSlider />
+            <Divider
+              thickness="0.25rem"
+              direction="middle"
+              color="lightblue"
+              height="extraLarge"
+              dividerStyle="solid"
+            />
+            <Recommendations />
             <div className="relative -mb-24 pb-32 -mt-10">
               <LazyRadialGradient
                 opacity={theme === "light" ? "opacity-30" : "opacity-30"}
