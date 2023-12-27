@@ -48,7 +48,7 @@ import websocketicon from "../../assets/icons/websocketicon.svg";
 import web3 from "../../assets/icons/web3.svg";
 import chatgpt from "../../assets/icons/chatgpt.svg";
 
-import { GoHome, GoPerson, GoMail, GoStack, GoProject , GoSmiley} from "react-icons/go";
+import { GoHome, GoMail, GoProject , GoSmiley} from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import { TbBrandOpenai } from "react-icons/tb";
 
@@ -110,14 +110,15 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Gobble",
+    title: "Social Food App",
+    name:'Gobble',
     description:"",
     description_EN:
-      "Contributed to the development of Gobble, a social group ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding.",
+      "Contributed to the development of a social food ordering app for discounted meals that achieved 47% MoM growth on revenue, 42% second month retention, and secured $1.6M in funding. I worked on major features like cart, payment, referral, and group party. I also managed the releases and listings on the Google Play Store and Apple's App Store.",
     tasks: [
       'The entire cart functionality with the ability to apply discounts.',
       'Integrated Firebase analytics into Gobble App to track user activities, uncover user journey insights, and analyze user behavior patterns; leveraged data-driven insights to optimize user experience and increase retention.',
-      'Worked on major gobble party feature with real-time operations using Socket.io',
+      ' gobble party feature with real-time operations using Socket.io',
       'Restaurant search along with a map and banners to show promotions.',
       'Payment functionality using Stripe.',
       'Referral feature (utilized deferred deep linking).',
@@ -151,11 +152,12 @@ export const projectsData = [
     },
   },
   {
-    title: "Labelcaster",
+    title: "SaaS Platform",
+    name: 'Labelcaster',
     description:
       "",
     description_EN:
-      "An automated platform for music distribution, contract management, reporting, and payouts between labels and artists.",
+      "An automated SaaS platform for music distribution, contract management, reporting, and payouts between labels and artists. I worked on the entire platform, including the website, admin panel, and mobile app. CI/CD was implemented using Github actions. Added Paypal integration for payments. Integrated Docusign for contract management. Implemented SendGrid for platform-wide email communication. Handled API integrations with Spotify, Twitch, and other music platforms for data synchronization.",
     tasks: [
       'Developed various features for artists, labels, admins, and managers in React native app and React Website.',
       'Implemented a Music player for labels and artists to listen songs.',
@@ -196,11 +198,12 @@ export const projectsData = [
   },
 
   {
-    title: "MyStylist",
+    title: "Salon Services App",
+    name: 'MyStylist',
     description:
       "",
     description_EN:
-      "Create an app allowing users to book hairstylists and salon services, complete with an extensive booking system.",
+      "Created an app allowing users to book hairstylists and salon services. I led a team of 5 members in developing the app. Designed and implemented an extensive booking system with a calendar module. Implemented user authentication and social media logins. Utilized Redux for state management in the app. Added Push Notifications using firebase and a map feature to show nearby salons.",
     tasks:[
       "Led a team of 5 members in developing an app for booking hairstylists and salon services.",
       "Designed and implemented an extensive booking system with a calendar module.",
@@ -232,11 +235,13 @@ export const projectsData = [
     },
   },
   {
-    title: "Pwayz",
+    title: "Parking Booking App",
+    name: "Pwayz",
+
     description:
       "",
     description_EN:
-      "Developed an app that facilitates renting parking spaces, including those in front of houses, personal garages, and similar locations.",
+      "Developed an app that facilitates renting parking spaces, including those in front of houses, personal garages, and similar locations. Integrated a map for users to easily find nearby available parking spaces. Implemented booking functionality within the app. Integrated Stripe for payment processing. Utilized Redux for efficient state management of the app. Set up the initial boilerplate for the application's development.",
     tasks:[
       "Integrated map for users to easily find nearby available parking spaces.",
       "Implemented booking functionality within the app.",
@@ -266,11 +271,12 @@ export const projectsData = [
     },
   },
   {
-    title: "TopperQ",
+    title: "Education App",
+    name:'ToperQ',
     description:
       "",
     description_EN:
-      "Empowered students to engage in subject-specific quizzes crafted by teachers, complete with a leaderboard for tracking progress and generating detailed reports.",
+      "Empowered students to engage in subject-specific quizzes crafted by teachers, complete with a leaderboard for tracking progress and generating detailed reports. I developed the app using React Native and Redux for state management. ",
       tasks:[
         "Enabled students to participate in subject-specific quizzes created by teachers.",
         "Integrated a leaderboard feature for tracking student progress.",
@@ -302,10 +308,11 @@ export const projectsData = [
     },
   },
   {
-    title: "Truesafe",
+    title: "Cybersecurity Training Platform",
+    name:'TrueSafe',
     description:"",
     description_EN:
-      "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules.",
+      "Collaborated on the development of a cybersecurity training platform tailored for employees, delivering engaging training modules. We developed the platform using React and Redux for state management. Integrated videos, quizzes, and games into the training modules. Implemented simulated phishing email exercises for practical learning. Contributed to the creation of comprehensive reporting features. Crafted an interactive educational game within the platform to enhance hands-on learning of crucial cybersecurity concepts. ",
     tasks: [
       "Developed engaging training modules using interactive slides.",
       "Integrated videos, quizzes, and games into the training modules.",
@@ -341,7 +348,7 @@ export const projectsData = [
   },
   
   {
-    title: "VidSpy",
+    title: "SaaS App",
     description:
       "",
     description_EN:
@@ -377,33 +384,34 @@ export const projectsData = [
       projectcolor: "#E3964A",
     },
   },
-  // {
-  //   title: "Grail",
-  //   description:
-  //     "",
-  //   description_EN:
-  //     "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products.",
-  //   technologies: [
-  //     { name: "React", icon: htmlicon },
-  //     { name: "Redux", icon: figmaicon },
-  //     { name: "Node JS", icon: javascripticon },
-  //     { name: "MongoDB", icon: apiicon },
-  //     { name: "HTML", icon: reacticon },
-  //     { name: "CSS", icon: reacticon },
-  //     { name: "Git", icon: reacticon },
-  //   ],
-  //   // image: instorMockup,
-  //   deploymenturl: "",
-  //   githuburl: "",
-  //   githubicon: FiGithub,
-  //   deploymenticon: FiLink,
-  //   colors: {
-  //     main: "main-btn",
-  //     second: "secondary-btn",
-  //     icon: "white",
-  //     projectcolor: "#E3964A",
-  //   },
-  // },
+  {
+    title: "E-commerce Platform",
+    name: "Grail",
+    description:
+      "",
+    description_EN:
+      "Developed an e-commerce platform specializing in the buying, bidding, and selling of vintage footwear. Implemented a robust bidding system, allowing sellers to choose the highest bidders or propose higher values for their products. Integrated a payment system using Stripe. Implemented a chat feature for buyers and sellers to communicate. ",
+    technologies: [
+      { name: "React", icon: htmlicon },
+      { name: "Redux", icon: figmaicon },
+      { name: "Node JS", icon: javascripticon },
+      { name: "MongoDB", icon: apiicon },
+      { name: "HTML", icon: reacticon },
+      { name: "CSS", icon: reacticon },
+      { name: "Git", icon: reacticon },
+    ],
+    // image: instorMockup,
+    deploymenturl: "",
+    githuburl: "",
+    githubicon: FiGithub,
+    deploymenticon: FiLink,
+    colors: {
+      main: "main-btn",
+      second: "secondary-btn",
+      icon: "white",
+      projectcolor: "#E3964A",
+    },
+  },
   // {
   //   title: "AngelLift",
   //   description:
@@ -644,10 +652,10 @@ export const skillsDataAlso = [
 
 export const navLinks = [
   { de: "", en: "Home", hash: "#home", icon: GoHome },
-  { de: "", en: "Skills", hash: "#skills", icon: GoStack },
+  // { de: "", en: "Skills", hash: "#skills", icon: GoStack },
   { de: "", en: "Projects", hash: "#projects", icon: GoProject },
   { de: "", en: "Kudos", hash: "#kudos", icon: GoSmiley },
-  { de: "", en: "About me", hash: "#about-me", icon: GoPerson },
+  // { de: "", en: "About me", hash: "#about-me", icon: GoPerson },
   { de: "", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
@@ -687,17 +695,19 @@ export const sideBarLeftSocials = [
 ] as const;
 
 export const quotesData = [
-  {
-    de: '',
-    en: `"We are all now connected by the Internet, like neurons in a giant brain."`,
-    author: "Stephen Hawking",
-  },
+  
   {
     de: '',
     en: `"The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life."`,
     author: 'Bill Gates'
   },
+  {
+    de: '',
+    en: `"We are all now connected by the Internet, like neurons in a giant brain."`,
+    author: "Stephen Hawking",
+  },
 ] as const;
+
 
 export const aboutMeData = {
   title: "",
@@ -728,7 +738,7 @@ export const aboutMeData = {
     {
       title: "Philosopher at Heart",
       description:
-        "Beyond the realms of everyday life, I delve into the profound mysteries of existence. Meditation and mindfulness are my sanctuaries; yoga, my journey to inner peace. Reading about philosophy and spirituality helps me connect with the deeper essence of life, finding tranquility in the pursuit of understanding.",
+        "Beyond the realms of everyday life, I delve into the profound mysteries of existence. Meditation and mindfulness are my sanctuaries; yoga, my journey to inner peace.",
       icon: yogaicon,
     },
     {
@@ -740,7 +750,7 @@ export const aboutMeData = {
     {
       title: "The Local Gadget Guru",
       description:
-        "Since the age of 13-14, I've been the neighborhood's go-to tech expert. Laptops, mobiles, dish TVs, CD players – you name it, I've fixed it. My curiosity knows no bounds, and I revel in the opportunity to explore and understand every gadget's features and possibilities. It's not just about fixing things; it's about unraveling the mysteries they hold.",
+        "Ever since I was 13 or 14, people in my neighborhood have known me as the tech person. Whether it's laptops, mobiles, dish TVs, or CD players, I've always been the one to fix them. I'm always curious, loving to learn and figure out how each gadget works.",
       icon: hardwareicon,
     },
   ],

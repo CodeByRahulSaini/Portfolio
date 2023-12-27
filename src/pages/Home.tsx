@@ -11,8 +11,8 @@ import Recommendations from "../components/Recommendations";
 const LazyBannerQuote = lazy(() => import("../components/BannerQuote"));
 const LazySiteBarRight = lazy(() => import("../components/SideBarRight"));
 const LazySiteBarLeft = lazy(() => import("../components/SiteBarLeft"));
-const LazyTechStack = lazy(() => import("../components/TechStack"));
-const LazyAboutMe = lazy(() => import("../components/AboutMe"));
+// const LazyTechStack = lazy(() => import("../components/TechStack"));
+// const LazyAboutMe = lazy(() => import("../components/AboutMe"));
 const LazyContact = lazy(() => import("../components/Contact"));
 const LazyHeaderIntro = lazy(() => import("../components/HeaderIntro"));
 const LazyRadialGradient = lazy(() => import("../components/RadialGradient"));
@@ -44,28 +44,28 @@ const Home: React.FC = () => {
               quoteIndex={0}
               containerType="quote"
             />
-            <Divider
+            {/* <Divider
               thickness="0.25rem"
               direction="outer-right-to-inner-left"
               color="lightblue"
               height="small"
               dividerStyle="solid"
-            />
+            /> */}
 
-            <LazyTechStack />
-            <Divider
+            {/* <LazyTechStack /> */}
+            {/* <Divider
               thickness="0.25rem"
               direction="inner-right-to-middle"
               color="lightblue"
               height="middle"
               dividerStyle="solid"
-            />
+            /> */}
 
-            <LazyBannerQuote
+            {/* <LazyBannerQuote
               style={"noBG"}
               quoteIndex={1}
               containerType="statement"
-            />
+            /> */}
             <Divider
               thickness="0.25rem"
               direction="middle"
@@ -88,18 +88,18 @@ const Home: React.FC = () => {
                 scale="scale-y-100"
                 position="-top-24"
               />
-              <Divider
+              {/* <Divider
                 thickness="0.25rem"
                 direction="middle-to-inner-left"
                 color="lightblue"
                 height="middle"
                 dividerStyle="solid"
-              />
+              /> */}
 
-              <LazyAboutMe />
+              {/* <LazyAboutMe /> */}
               <Divider
                 thickness="0.25rem"
-                direction="inner-left-to-middle"
+                direction="middle"
                 color="lightblue"
                 height="middle"
                 dividerStyle="solid"

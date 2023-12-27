@@ -9,12 +9,14 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import { useTheme } from "../context/theme-context";
 import LiveTicker from "./ParallaxText";
+import { useSectionInView } from "../assets/lib/hooks";
  
 const Recommendations: React.FC = () => {
   const { theme } = useTheme()
+  const { ref } = useSectionInView("Kudos");
   return (
     <React.Fragment>
-       <section id="kudos" className="quote-banner mt-10 relative overflow-x-clip z-[1]">
+       <section id="kudos"   ref={ref} className="quote-banner mt-10 relative overflow-x-clip z-[1]">
         <div
           className="quote-outer-container bg-[--darkblue] h-[70vh] -rotate-3 flex justify-center items-center scale-110 max-lg:h-full min-[1921px]:px-96"
           style={{
@@ -33,7 +35,7 @@ const Recommendations: React.FC = () => {
               navigation
               scrollbar={{ draggable: true }}
               autoplay={{
-                delay: 15000,
+                delay: 5000,
                 disableOnInteraction: true,
                 pauseOnMouseEnter: true,
               }}
@@ -47,7 +49,7 @@ const Recommendations: React.FC = () => {
               {recommendations.map((recommendation, index: number) => (
                 <SwiperSlide
                   key={index}
-                  style={{ filter:theme ==='dark' ?  "brightness(0.5)" : ''}}
+                  style={{ filter:theme ==='dark' ?  "brightness(0.7)" : ''}}
                   className="text-[--white] flex flex-row justify-between   p-20 text-left  "
                 >
                   <div className="  flex flex-col gap-12 ">

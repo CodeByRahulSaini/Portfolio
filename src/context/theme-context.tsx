@@ -38,7 +38,7 @@ export default function ThemeContextProvider({
     //   ? "dark"
     //   : "";
     // const initialTheme = localTheme || preferredColorScheme;
-    const initialTheme = "light";
+    const initialTheme = "dark";
 
     setTheme(initialTheme);
     document.documentElement.classList.add(initialTheme);

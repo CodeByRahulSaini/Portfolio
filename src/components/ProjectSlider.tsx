@@ -82,12 +82,12 @@ const ProjectSlider: React.FC = () => {
               effect="cards"
               grabCursor={true}
               modules={[EffectCards, Autoplay, Pagination, Navigation]}
-              className=" w-[60vw] max-lg:hidden min-[1921px]:px-96"
+              className=" w-[40vw] max-lg:hidden min-[1921px]:px-96"
               loop={true}
               navigation
               scrollbar={{ draggable: true }}
               autoplay={{
-                delay: 15000,
+                delay: 5000,
                 disableOnInteraction: true,
                 pauseOnMouseEnter: true,
               }}
@@ -103,7 +103,7 @@ const ProjectSlider: React.FC = () => {
                 <SwiperSlide
                   key={index}
                   
-                  className="quote-outer-container bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
+                  className="  quote-outer-container  bg-[--darkblue] text-[--white] flex flex-row justify-between  rounded-2xl p-20 text-left max-lg:hidden "
                 >
                   <div className="  flex flex-col gap-12 justify-between ">
                     <h2>{project.title}</h2>
@@ -118,15 +118,15 @@ const ProjectSlider: React.FC = () => {
                         My Tasks
                       </h4> */}
                       {/* <p className=" font-thin" >My Tasks:</p> */}
-                      <ul>
+                      {/* <ul>
                         {project.tasks?.map(task=><li>{task}</li>)}
-                      </ul>
+                      </ul> */}
                     {/* </div>  */}
-                    <div className="technologies">
+                    {/* <div className="technologies"> */}
                       {/* <h4>
                         {language === "DE" ? "Technologien" : "Technologies"}
                       </h4> */}
-                      <div className="grid grid-cols-6 gap-3 p-4">
+                      {/* <div className="grid grid-cols-6 gap-3 p-4">
                         {project.technologies.map(
                           (technology) => (
                             <span className="text-[1.4rem]">{technology.name}</span>
@@ -140,8 +140,8 @@ const ProjectSlider: React.FC = () => {
                             // />
                           )
                         )}
-                      </div>
-                    </div>
+                      </div> */}
+                    {/* </div> */}
                     <div className="buttons flex gap-10">
                       {/* <Button
                         label="Live Demo"
@@ -205,7 +205,7 @@ const ProjectSlider: React.FC = () => {
                     : project.description_EN}
                 </p>
 
-                <div className="technologies">
+                {/* <div className="technologies">
                   <h3 className="text-white">
                     {language === "DE" ? "Technologien" : "Technologies"}
                   </h3>
@@ -214,18 +214,11 @@ const ProjectSlider: React.FC = () => {
                       (technology) => (
                         <span className="text-white text-[1.4rem]">{technology.name}</span>
 
-                        // <img
-                        //   key={innerIndex}
-                        //   src={technology.icon}
-                        //   alt={`${project.title}-icon`}
-                        //   className="h-[5rem] w-[60%] "
-                        //   data-tooltip-id="my-tooltip"
-                        //   data-tooltip-content={technology.name}
-                        // />
+                        
                       )
                     )}
                   </div>
-                </div>
+                </div> */}
               </article>
             ))}
           </div>
