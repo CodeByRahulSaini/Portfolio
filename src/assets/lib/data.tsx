@@ -22,6 +22,7 @@ import apiicon from "../../assets/icons/apiicon.svg";
 import yogaicon from "../../assets/icons/yogaicon.svg";
 // import instorMockup from "../../assets/img/instor_mockup.webp";
 // import silentmoonMockup from "../../assets/img/silentmoon_mockup.webp";
+import kudos from "../../assets/img/WilliamCandillonReposted_.png";
 import recommendation1 from "../../assets/img/recommendation1.webp";
 import recommendation2 from "../../assets/img/recommendation2.webp";
 import recommendation3 from "../../assets/img/recommendation3.webp";
@@ -49,7 +50,7 @@ import web3 from "../../assets/icons/web3.svg";
 import chatgpt from "../../assets/icons/chatgpt.svg";
 
 import { GoHome, GoMail, GoProject , GoSmiley} from "react-icons/go";
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiGithub, FiLink, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
 import { TbBrandOpenai } from "react-icons/tb";
 
 // import Imprint from "../../components/Imprint";
@@ -59,6 +60,7 @@ export const personalData = {
   linkedin: 'https://www.linkedin.com/in/rahul-saini-profile/',
   github: 'https://github.com/CodeByRahulSaini',
   chatgpt: 'https://chat.openai.com/g/g-NESK8QsGG-hellorahul',
+  twitter: 'https://twitter.com/_RahulSaini__',
 } as const;
 
 
@@ -70,20 +72,20 @@ export const headerIntroData = {
   subtitle: " ",
   description: {
     de: "",
-    en: "With over 6 years of experience in building mobile and web applications, I have worked with numerous startups and companies to develop products across various domains, including Education, SaaS, E-commerce, Travel, Food, Cybersecurity, Music, and Beauty. I am a problem-solver, a quick learner, and I love working with new technologies while sharpening my skills in existing ones.",
+    en: "I have worked with many startups and companies to develop products across various domains, including Education, SaaS, E-commerce, Travel, Food, Cybersecurity, Music, and Beauty. I am a problem-solver, a quick learner, and I love working with new technologies while sharpening my skills in existing ones.",
   },
   initials: "RS",
   buttons: [
-    {
-      name: "",
-      label: {
-        de: "",
-        en: "Ask ChatGPT about me",
-      },
-      link: personalData.chatgpt,
-      icon: TbBrandOpenai,
-      color: "secondary-btn",
-    },
+    // {
+    //   name: "",
+    //   label: {
+    //     de: "",
+    //     en: "Ask ChatGPT about me",
+    //   },
+    //   link: personalData.chatgpt,
+    //   icon: TbBrandOpenai,
+    //   color: "secondary-btn",
+    // },
     {
       name: "Contact",
       label: {
@@ -673,6 +675,11 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
+    link: `mailto:${personalData.email}`,
+    icon: FiMail,
+    altimgname: "mail",
+  },
+  {
     link: personalData.linkedin,
     icon: FiLinkedin,
     altimgname: "linkedin",
@@ -682,16 +689,17 @@ export const sideBarLeftSocials = [
     icon: FiGithub,
     altimgname: "github",
   },
+ 
   {
-    link: `mailto:${personalData.email}`,
-    icon: FiMail,
-    altimgname: "mail",
+    link: personalData.twitter ,
+    icon: FiTwitter,
+    altimgname: "twitter",
   },
-  {
-    link: personalData.chatgpt,
-    icon: TbBrandOpenai,
-    altimgname: "chatgpt",
-  },
+  // {
+  //   link: personalData.chatgpt,
+  //   icon: TbBrandOpenai,
+  //   altimgname: "chatgpt",
+  // },
 ] as const;
 
 export const quotesData = [
@@ -871,6 +879,7 @@ export const buttonLabels = {
 } as const;
 
 export const recommendations = [
+{ image : kudos },
 { image : recommendation1 },
 { image : recommendation2 },
 { image : recommendation3 },
@@ -878,6 +887,7 @@ export const recommendations = [
 { image : recommendation5 },
 { image : recommendation6 },
 { image : recommendation7 },
+
 ] as const;
 
 

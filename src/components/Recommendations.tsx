@@ -35,7 +35,7 @@ const Recommendations: React.FC = () => {
               navigation
               scrollbar={{ draggable: true }}
               autoplay={{
-                delay: 5000,
+                delay: 10000,
                 disableOnInteraction: true,
                 pauseOnMouseEnter: true,
               }}

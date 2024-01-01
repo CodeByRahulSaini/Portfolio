@@ -13,7 +13,7 @@ import {
 import { wrap } from "@motionone/utils";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../context/language-context";
-import { sideBarLeftSocials, liveTickerData } from "../assets/lib/data";
+import { liveTickerData, personalData } from "../assets/lib/data";
 
 interface ParallaxProps {
   children: any;
@@ -129,7 +129,7 @@ export default function LiveTicker() {
       <div className="bg-[--lightblue] h-[4.8vh] -rotate-3 flex justify-center items-center scale-110 relative z-[1] w-full min-[1921px]:h-[3.3vh]">
         <ParallaxText baseVelocity={-2}>
           <Link
-            to={sideBarLeftSocials[3].link}
+            to={personalData.chatgpt}
             target="_blank"
             rel="noopener noreferrer"
           >
