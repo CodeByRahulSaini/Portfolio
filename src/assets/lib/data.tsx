@@ -51,7 +51,7 @@ import chatgpt from "../../assets/icons/chatgpt.svg";
 
 import { GoHome, GoMail, GoProject , GoSmiley} from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail, FiTwitter } from "react-icons/fi";
-import { TbBrandOpenai } from "react-icons/tb";
+// import { TbBrandOpenai } from "react-icons/tb";
 
 // import Imprint from "../../components/Imprint";
 // import Privacy from "../../components/Privacy";
