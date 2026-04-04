@@ -1,57 +1,20 @@
-# Portfolio Webseite
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-This is a portfolio website built using React, Tailwind CSS, and TypeScript. The website showcases my skills and projects as a full-stack developer. For the contactform i used a backend, which is build on node.js and express.
+# Run and deploy your AI Studio app
 
-## Demo
+This contains everything you need to run your app locally.
 
-You can also check out the live demo of the portfolio website [here](https://rahulsaini-portfolio.vercel.app/).
+View your app in AI Studio: https://ai.studio/apps/099838d2-0749-4109-a955-02485ca219fd
 
-## Features
+## Run Locally
 
-- SEO optimized
-- User settings stored in session storage
-- Dark and Light mode available
-- Easy data modification through a single `data.tsx` file
-- Gziped and lazy loaded Data
-- Developed first with the Mobile First methodology, then for desktop.
-- Compatible with all mobile devices and with a beautiful and pleasant user interface.
-- Smooth scrolling in each section.Contains animations when scrolling.
-- Uptime Service with colored animation
+**Prerequisites:**  Node.js
 
-## Installation
 
-Clone the Repo
-
-```bash
-  git clone <reponame>
-```
-
-Installation of dependencies
-
-```bash
-npm i or npm install
-```
-
-Start Server
-
-```bash
-npm run dev
-```
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file. See .env-init in root directory
-
-`API_BASE_URL`
-
-`API_SERVICESTATUS_URL`
-
-## Tech Stack
-
-**Client:** React, React Router Dom, Tailwind CSS, Typescript, Axios, Framer Motion, GSAP, Prism React Renderer, React Icons, React Intersection Observer, React Toastify, React Tooltip, Reactjs Popup, Swiper, Rollup Plugin Gzip
-
-**Server:** Node, Express, NodeMailer
-
-## Support
-
-If you find this project helpful or would like to support, you can ⭐ original repo: https://github.com/AlpayC/portfolio_site
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
