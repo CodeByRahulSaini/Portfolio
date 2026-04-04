@@ -469,6 +469,17 @@ const App: React.FC = () => {
                     </div>
                   )}
 
+                  {/* Project Video */}
+                  {project.video && (
+                    <div className="mt-6 rounded-lg overflow-hidden border border-ink-200 bg-black/5 no-print">
+                      <video
+                        src={project.video}
+                        controls
+                        className="w-full max-h-[500px] object-contain"
+                      />
+                    </div>
+                  )}
+
                   {/* Project Instagram Embed */}
                   {project.instagramEmbed && (
                     <div 

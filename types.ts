@@ -23,6 +23,7 @@ export interface Project {
   impact?: string;
   images?: ImageAsset[];
   videoUrl?: string;
+  video?: string;
   instagramEmbed?: string;
 }
 
