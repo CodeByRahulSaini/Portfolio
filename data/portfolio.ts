@@ -18,7 +18,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       "category": "Frontend & Mobile",
-      "items": ["React", "React Native", "GraphQL", "RxDB (Local Storage)", "Redux", "Websockets", "Animations using Reanimated", "Skia", "Performance Profiling & Optimization"]
+      "items": ["React", "React Native", "GraphQL", "RxDB (Local Storage)", "Redux", "Websockets", "Animations using Reanimated", "Skia", "Performance Profiling & Optimization", "App Security & Best Practices"]
     },
     {
       "category": "Testing",
